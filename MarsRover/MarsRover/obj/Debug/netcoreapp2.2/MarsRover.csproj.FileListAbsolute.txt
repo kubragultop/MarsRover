@@ -1,0 +1,10 @@
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.deps.json
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.runtimeconfig.json
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.runtimeconfig.dev.json
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.dll
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\bin\Debug\netcoreapp2.2\MarsRover.pdb
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.AssemblyInfoInputs.cache
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.AssemblyInfo.cs
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.dll
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.pdb
+C:\Users\kubgulto\source\repos\MarsRover\MarsRover\obj\Debug\netcoreapp2.2\MarsRover.genruntimeconfig.cache

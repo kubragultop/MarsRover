@@ -1,6 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using MarsRover.Domain;
+using System;
 
 namespace MarsRover.Helpers
 {
@@ -8,63 +7,62 @@ namespace MarsRover.Helpers
     {
         public static Position GetPossibleRotateDirection(Position position, char moveInstruction)
         {
-            var returnPosition = position;  // bunu kapatıp parametre position üstünden ilerlemeyi dene. Referans type. return.position.direction yerine position.direction yaz
 
-            if (moveInstruction == (char)InstructionEnum.L)
+            if (moveInstruction == (char)Instruction.L)
             {
-                switch (position.direction)
+                switch (position.Direction)
                 {
-                    case DirectionEnum.N:
-                        returnPosition.direction = DirectionEnum.W;
+                    case Direction.N:
+                        position.Direction = Direction.W;
                         break;
-                    case DirectionEnum.S:
-                        returnPosition.direction = DirectionEnum.E;
+                    case Direction.S:
+                        position.Direction = Direction.E;
                         break;
-                    case DirectionEnum.E:
-                        returnPosition.direction = DirectionEnum.N;
+                    case Direction.E:
+                        position.Direction = Direction.N;
                         break;
-                    case DirectionEnum.W:
-                        returnPosition.direction = DirectionEnum.S;
+                    case Direction.W:
+                        position.Direction = Direction.S;
                         break;
                     default:
                         break;
                 }
             }
-            else if (moveInstruction == (char)InstructionEnum.R)
+            else if (moveInstruction == (char)Instruction.R)
             {
-                switch (position.direction)
+                switch (position.Direction)
                 {
-                    case DirectionEnum.N:
-                        returnPosition.direction = DirectionEnum.E;
+                    case Direction.N:
+                        position.Direction = Direction.E;
                         break;
-                    case DirectionEnum.S:
-                        returnPosition.direction = DirectionEnum.W;
+                    case Direction.S:
+                        position.Direction = Direction.W;
                         break;
-                    case DirectionEnum.E:
-                        returnPosition.direction = DirectionEnum.S;
+                    case Direction.E:
+                        position.Direction = Direction.S;
                         break;
-                    case DirectionEnum.W:
-                        returnPosition.direction = DirectionEnum.N;
+                    case Direction.W:
+                        position.Direction = Direction.N;
                         break;
                     default:
                         break;
                 }
             }
-            else if (moveInstruction == (char)InstructionEnum.M)
+            else if (moveInstruction == (char)Instruction.M)
             {
-                switch (position.direction)
+                switch (position.Direction)
                 {
-                    case DirectionEnum.N:
-                        returnPosition.Y += 1;
+                    case Direction.N:
+                        position.Y += 1;
                         break;
-                    case DirectionEnum.S:
-                        returnPosition.Y -= 1;
+                    case Direction.S:
+                        position.Y -= 1;
                         break;
-                    case DirectionEnum.E:
-                        returnPosition.X += 1;
+                    case Direction.E:
+                        position.X += 1;
                         break;
-                    case DirectionEnum.W:
-                        returnPosition.X -= 1;
+                    case Direction.W:
+                        position.X -= 1;
                         break;
                     default:
                         break;
@@ -72,9 +70,9 @@ namespace MarsRover.Helpers
             }
             else
             {
-                // buraya geçersiz karakter uyarısı ver
+                throw new Exception("Invalid Character. Please enter L, R or M.");                
             }
-            return returnPosition;
+            return position;
         }
     }
 }
